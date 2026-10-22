@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import { Download } from 'lucide-react';
 const projects = [
   { number: '01', name: 'Sastazon.pk', category: 'E-COMMERCE · LIVE', description: 'A live online shopping experience built to make discovering everyday products feel simple and enjoyable.', tags: ['E-commerce', 'Live store'], href: 'https://sastazonpk.vercel.app' },
   { number: '02', name: 'ResumeCraft', category: 'CAREER TOOL · LIVE', description: 'A resume crafting experience designed to help people shape their next career move with confidence.', tags: ['Career', 'Web application'], href: 'https://resume-craft-project.vercel.app' },
@@ -48,7 +48,7 @@ function Hero() {
     <div className="hero-copy reveal"><p className="eyebrow"><span className="availability"><i /> OPEN TO OPPORTUNITIES</span><span className="eyebrow-location">PAKISTAN · AVAILABLE REMOTELY</span></p>
       <h1>Building digital<br />ideas into <span className="color-text">reality<span className="period">.</span></span></h1>
       <p className="hero-intro">I’m <strong>Kamran Ali Memon</strong><span className="role-intro"><br />I work as a <RoleRotator /></span></p>
-      <div className="hero-buttons"><a className="button button-bright" href="#work">Explore my work <Arrow /></a><a className="button button-quiet" href="#contact">Let’s connect <Arrow diagonal /></a><a className="resume-request" href="/KAM_Full_Stack_Developer_CV.pdf" target="_blank" rel="noreferrer">View CV <Arrow diagonal /></a><a className="resume-request" href="/KAM_Full_Stack_Developer_CV.pdf" download>Download CV <Arrow diagonal /></a></div>
+      <div className="hero-buttons"><a className="button button-bright" href="#work">Explore my work <Arrow /></a><a className="button button-quiet" href="#contact">Let’s connect <Arrow diagonal /></a><a className="resume-request" href="/KAM_Full_Stack_Developer_CV_final.pdf" target="_blank" rel="noreferrer">View CV <Arrow diagonal /></a><a className="resume-request" href="/KAM_Full_Stack_Developer_CV_final.pdf" download="Kamran-Ali-Memon-CV.pdf" target="_blank" rel="noopener noreferrer"><Download size={16} /> Download CV</a></div>
       <div className="hero-stack"><span>FOCUSED ON</span><i /><b>REACT</b><b>NODE.JS</b><b>SHOPIFY</b><b>AI TOOLS</b></div>
     </div>
     <div className="hero-portrait reveal reveal-late"><div className="portrait-frame"><img src="/kamran-profile.jpg" alt="Portrait of Kamran Ali Memon" /><span className="portrait-corner corner-tl" /><span className="portrait-corner corner-br" /></div><div className="portrait-orbit orbit-one" /><div className="portrait-orbit orbit-two" /><div className="portrait-note"><span className="note-dot" /> DESIGNING · BUILDING · LEARNING</div><span className="hero-decoration deco-plus">✳</span><span className="hero-decoration deco-star">✦</span><div className="portrait-index">KAMRAN<br /><span>01 / 26</span></div></div>
