@@ -3,14 +3,15 @@ import { Download } from 'lucide-react';
 const projects = [
   { number: '01', name: 'Sastazon.pk', category: 'E-COMMERCE · LIVE', description: 'A live online shopping experience built to make discovering everyday products feel simple and enjoyable.', tags: ['E-commerce', 'Live store'], href: 'https://sastazonpk.vercel.app' },
   { number: '02', name: 'ResumeCraft', category: 'CAREER TOOL · LIVE', description: 'A resume crafting experience designed to help people shape their next career move with confidence.', tags: ['Career', 'Web application'], href: 'https://resume-craft-project.vercel.app' },
+  { number: '03', name: 'PeopleDesk', category: 'HUMAN CAPITAL MANAGEMENT · LIVE', description: 'An enterprise-ready human capital management platform bringing AI-assisted HR workflows, payroll, attendance, and leave management together, with secure role-based access for multi-tenant teams.', tags: ['Next.js', 'HR platform', 'AI workflows'], href: 'https://people-deskfrontend.vercel.app' },
 ];
 const roles = ['Full Stack Developer', 'MERN Stack Developer', 'Shopify Developer', 'AI-Assisted Developer', 'Software Engineer'];
 const skillGroups = [
-  { label: 'LANGUAGES', skills: ['JavaScript'] },
-  { label: 'FRONTEND', skills: ['React', 'Next.js', 'HTML', 'CSS', 'Responsive UI'] },
-  { label: 'BACKEND', skills: ['Node.js', 'Express', 'REST APIs'] },
-  { label: 'DATABASES', skills: ['MongoDB'] },
-  { label: 'TOOLS & PLATFORMS', skills: ['Shopify', 'Git & GitHub', 'AI-assisted development'] },
+  { label: 'FRONTEND DEV', skills: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React.js', 'Next.js', 'React Native', 'Tailwind CSS', 'Bootstrap', 'Context API', 'Redux Toolkit'] },
+  { label: 'BACKEND DEV', skills: ['Node.js', 'Express.js', 'RESTful API Architecture', 'JWT & CORS Auth', 'Server-Side Rendering (SSR)'] },
+  { label: 'DATABASE & STORAGE', skills: ['MongoDB', 'Mongoose ORM', 'PostgreSQL', 'Cloudinary Media Services', 'Multer Memory Management'] },
+  { label: 'TOOLS & DEPLOYMENT', skills: ['Git', 'GitHub', 'VS Code', 'Vercel', 'Railway', 'Render', 'Postman API Testing', 'Axios', 'Figma UI/UX'] },
+  { label: 'AI-ASSISTED TOOLS', skills: ['ChatGPT', 'Gemini CLI', 'OpenAI Codex', 'Cursor', 'Google Antigravity', 'Automated Testing & Debugging'] },
 ];
 
 function Arrow({ diagonal = false }) { return <span aria-hidden="true" className="arrow">{diagonal ? '↗' : '→'}</span>; }
@@ -61,10 +62,10 @@ function ProjectArtwork({ project }) {
 }
 
 function Projects() {
-  return <section className="work section" id="work"><div className="section-heading reveal"><div><p className="section-kicker"><span>01</span> / SELECTED WORK</p><h2>Work that<br /><span className="color-text">speaks for itself.</span></h2></div><p className="heading-note">Two live products. Ideas turned into real experiences, built with intention and care.</p></div>
+  return <section className="work section" id="work"><div className="section-heading reveal"><div><p className="section-kicker"><span>01</span> / SELECTED WORK</p><h2>Work that<br /><span className="color-text">speaks for itself.</span></h2></div><p className="heading-note">Three live products. Ideas turned into real experiences, built with intention and care.</p></div>
     <div className="project-list">{projects.map((project) => <article className="project-card reveal" key={project.number}>
       <a className="project-art-link" href={project.href} target="_blank" rel="noreferrer" aria-label={'Visit ' + project.name + ' live demo'}><ProjectArtwork project={project} /><span className="project-open">OPEN LIVE DEMO <Arrow diagonal /></span></a>
-      <div className="project-detail"><div className="project-number">{project.number}<span> / 02</span></div><div className="project-main"><p className="project-category">{project.category}</p><h3>{project.name}</h3><p className="project-description">{project.description}</p><div className="project-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div><a className="project-link" href={project.href} target="_blank" rel="noreferrer" aria-label={'Visit ' + project.name + ' live demo'}><Arrow diagonal /></a></div>
+      <div className="project-detail"><div className="project-number">{project.number}<span> / 03</span></div><div className="project-main"><p className="project-category">{project.category}</p><h3>{project.name}</h3><p className="project-description">{project.description}</p><div className="project-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div><a className="project-link" href={project.href} target="_blank" rel="noreferrer" aria-label={'Visit ' + project.name + ' live demo'}><Arrow diagonal /></a></div>
     </article>)}</div><div className="work-foot reveal"><span>MORE IN THE WORKS</span><span className="work-foot-line" /><span>ALWAYS BUILDING WHAT’S NEXT <b>✳</b></span></div>
   </section>;
 }
@@ -87,7 +88,11 @@ function Skills() {
 
 function Experience() {
   return <section className="experience section" id="experience"><div className="section-heading reveal"><div><p className="section-kicker"><span>04</span> / EXPERIENCE</p><h2>Learning by<br /><span className="color-text">building.</span></h2></div><p className="heading-note">My professional experience across internship and remote work.</p></div>
+<<<<<<< HEAD
     <div className="experience-list reveal"><article className="experience-item"><span className="experience-index">01</span><div><p>INTERNSHIP</p><h3>Software Developer Intern</h3><span>6 months [Ovex Tech]</span></div><span className="experience-type">EARLY CAREER</span></article><article className="experience-item"><span className="experience-index">02</span><div><p>REMOTE EXPERIENCE</p><h3>Full Stack Developer </h3><span>2+ years [Freelancing]</span></div><span className="experience-type">REMOTE</span></article></div>
+=======
+    <div className="experience-list reveal"><article className="experience-item"><span className="experience-index">01</span><div><p>INTERNSHIP</p><h3>Software Developer Intern</h3><span>6 months [Ovex Tech]</span></div><span className="experience-type">EARLY CAREER</span></article><article className="experience-item"><span className="experience-index">02</span><div><p>FREELANCING</p><h3>Full-Stack Web Developer</h3><span>2+ years · Freelance</span></div><span className="experience-type">REMOTE WORK</span></article></div>
+>>>>>>> 6f54f6b (CV UPDATED)
   </section>;
 }
 
