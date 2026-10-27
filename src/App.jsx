@@ -88,11 +88,7 @@ function Skills() {
 
 function Experience() {
   return <section className="experience section" id="experience"><div className="section-heading reveal"><div><p className="section-kicker"><span>04</span> / EXPERIENCE</p><h2>Learning by<br /><span className="color-text">building.</span></h2></div><p className="heading-note">My professional experience across internship and remote work.</p></div>
-<<<<<<< HEAD
-    <div className="experience-list reveal"><article className="experience-item"><span className="experience-index">01</span><div><p>INTERNSHIP</p><h3>Software Developer Intern</h3><span>6 months [Ovex Tech]</span></div><span className="experience-type">EARLY CAREER</span></article><article className="experience-item"><span className="experience-index">02</span><div><p>REMOTE EXPERIENCE</p><h3>Full Stack Developer </h3><span>2+ years [Freelancing]</span></div><span className="experience-type">REMOTE</span></article></div>
-=======
     <div className="experience-list reveal"><article className="experience-item"><span className="experience-index">01</span><div><p>INTERNSHIP</p><h3>Software Developer Intern</h3><span>6 months [Ovex Tech]</span></div><span className="experience-type">EARLY CAREER</span></article><article className="experience-item"><span className="experience-index">02</span><div><p>FREELANCING</p><h3>Full-Stack Web Developer</h3><span>2+ years · Freelance</span></div><span className="experience-type">REMOTE WORK</span></article></div>
->>>>>>> 6f54f6b (CV UPDATED)
   </section>;
 }
 
